@@ -1,0 +1,16 @@
+@use '@st/utils';
+
+.userList {
+	padding-block: clamp(3.125rem, 1.2764rem + 7.0423vw, 6.25rem);
+  position: relative;
+}
+
+.title {
+  margin-bottom: 3.125rem;
+  text-align: center;
+  @extend .text-h1
+}
+
+.btn {
+	margin-inline: auto;
+}

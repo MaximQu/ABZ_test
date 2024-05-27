@@ -1,0 +1,49 @@
+@use "@st/utils";
+
+.btn {
+	&.fill {
+		--_bg-color: var(--c-yellow-300);
+		--_hover-bg-color: var(--c-yellow-400);
+		--_active-bg-color: var(--c-yellow-500);
+		--_color: var(--c-black);
+	}
+
+	&.dark {
+		--_bg-color: var(--c-primary-300);
+		--_hover-bg-color: var(--c-primary-400);
+		--_active-bg-color: var(--c-primary-500);
+		--_color: var(--c-white);
+	}
+
+	font-size: var(--fs-desc-sm);
+	line-height: 1.3;
+	display: block;
+	padding: calc(0.5rem - var(--_border-w, 0rem))
+		calc(1rem - var(--_border-w, 0rem));
+	max-width: 7.5rem;
+	width: 100%;
+	color: var(--_color);
+	text-align: center;
+	text-wrap: nowrap;
+	transition-duration: var(--t-time);
+	background-color: var(--_bg-color);
+	border-radius: 100vmax;
+
+	&::first-letter {
+		text-transform: uppercase;
+	}
+
+	&:active {
+		background-color: var(--_active-bg-color);
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			background-color: var(--_hover-bg-color);
+		}
+	}
+
+	@media (width <= 425px) {
+		max-width: 100%;
+	}
+}

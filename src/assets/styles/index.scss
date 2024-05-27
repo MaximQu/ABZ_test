@@ -1,0 +1,33 @@
+@use "./reset";
+@use "./vars";
+@use "./utils";
+@use "./fonts";
+@use "./animations";
+
+body {
+	font-family: var(--ff-main);
+	color: var(--c-primary-800);
+	font-weight: var(--fw-reg);
+	background-color: var(--c-primary-100);
+	line-height: 1.55;
+	font-size: 1rem;
+  min-height: 100vh;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+  min-height: 100vh;
+
+	main {
+		flex: 1;
+	}
+}
+
+main {
+	padding-top: 4.0625rem;
+}
+
+p {
+	line-height: 1.55;
+}

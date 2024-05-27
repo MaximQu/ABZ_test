@@ -1,0 +1,57 @@
+.userCard {
+	border-radius: 0.625rem;
+	background-color: var(--c-white);
+	padding: 1.25rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition-duration: var(--t-time);
+	border: 2px solid transparent;
+	position: relative;
+
+	@media (hover: hover) {
+		&:hover {
+			border-color: var(--c-primary-400);
+			border-radius: 0;
+		}
+	}
+
+	a {
+		@media (hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.name,
+.position,
+.email {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+}
+
+.photo {
+	width: 4.375rem;
+	height: 4.375rem;
+	margin-bottom: 1.25rem;
+	border-radius: 100vmax;
+}
+
+.name {
+	margin-bottom: 1.25rem;
+	font-weight: var(--fw-reg);
+}
+
+.position {
+	margin-bottom: 0.75rem;
+}
+
+.email {
+	margin-bottom: 0.75rem;
+}

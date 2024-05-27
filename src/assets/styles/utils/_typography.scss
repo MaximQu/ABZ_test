@@ -1,0 +1,82 @@
+.text {
+	// Font size
+	&-h1 {
+		font-size: var(--fs-desk-tab-h1);
+
+		@media (width <=768px) {
+			font-size: var(--fs-tab-mob-h1);
+		}
+	}
+
+	&-h2 {
+		font-size: var(--fs-desk-tab-h2);
+
+		@media (width <=768px) {
+			font-size: var(--fs-tab-mob-h2);
+		}
+	}
+
+	&-h3 {
+		font-size: var(--fs-desk-tab-h3);
+
+		@media (width <=768px) {
+			font-size: var(--fs-tab-mob-h3);
+		}
+	}
+
+	&-h4 {
+		font-size: var(--fs-desk-tab-h4);
+
+		@media (width <=768px) {
+			font-size: var(--fs-tab-mob-h4);
+		}
+	}
+
+	&-md {
+		font-size: var(--fs-desk-tab-md);
+
+		@media (width <=768px) {
+			font-size: var(--fs-tab-mob-md);
+		}
+	}
+
+	&-sm {
+		font-size: var(--fs-desk-tab-sm);
+
+		@media (width <=768px) {
+			font-size: var(--fs-tab-mob-sm);
+		}
+	}
+
+	// Line height
+	&-h1,
+	&-h2,
+	&-h3 {
+		line-height: 1.2;
+		font-weight: var(--fw-reg);
+	}
+
+	@media (width <= 480px) {
+		&-h3 {
+			line-height: 1.4;
+		}
+	}
+
+	&-h4 {
+		line-height: 1.3;
+		font-weight: var(--fw-reg);
+	}
+
+	&-md,
+	&-sm,
+	&-xs {
+		line-height: 1.4;
+		font-weight: var(--fw-reg);
+	}
+
+	// Font weight
+	&-sm,
+	&-xs {
+		font-weight: var(--fw-reg);
+	}
+}

@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+	z-index: var(--z-highest);
+	width: 100%;
+	padding-block: 1rem;
+	background-color: var(--c-white);
+  padding-block: 0.875rem;
+  background-color: var(--c-white);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.block {
+  display: flex;
+  margin-left: auto;
+  gap: 0.625rem;
+}
+
+.btn {
+  max-width: 6.25rem;
+}

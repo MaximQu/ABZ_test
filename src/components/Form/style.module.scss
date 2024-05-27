@@ -1,0 +1,127 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: clamp(1.5rem, 0.3393rem + 4.9524vw, 3.125rem);
+	max-width: 23.75rem;
+	margin-inline: auto;
+}
+
+.input {
+	border-radius: 0.25rem;
+	border: 1px solid var(--c-primary-300);
+	padding: 0.875rem 1rem;
+	width: 100%;
+	outline: transparent;
+
+	transition-duration: var(--t-time);
+
+	&:focus {
+		border-color: var(--c-primary-700);
+	}
+
+	&::placeholder {
+		color: var(--c-primary-400);
+	}
+
+	&:invalid {
+		border-color: var(--c-red);
+		color: var(--c-red);
+	}
+}
+
+.label {
+	width: 100%;
+	position: relative;
+
+	span {
+		position: absolute;
+		background-color: var(--c-primary-100);
+		top: -10px;
+		left: 10px;
+		padding: 0.25rem;
+		font-size: var(--fs-mob-sm);
+		color: var(--c-primary-600);
+		transition-duration: var(--t-time);
+	}
+
+	p {
+		font-size: var(--fs-mob-sm);
+		padding-left: 1rem;
+		color: var(--c-primary-600);
+	}
+
+	&.isEmpty {
+		span {
+			font-size: 1rem;
+			top: 15px;
+			left: 18px;
+		}
+	}
+
+	span {
+		font-size: var(--fs-mob-sm);
+		top: -10px;
+		left: 10px;
+	}
+
+	&:has(> input:invalid) {
+		span {
+			color: var(--c-red);
+		}
+	}
+}
+
+.text {
+	margin-bottom: 1rem;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.block {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	width: fit-content;
+	cursor: pointer;
+}
+
+.btn {
+	margin-inline: auto;
+}
+
+.uploadPhotoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputFileWrapper {
+	display: flex;
+	align-items: center;
+}
+
+.labelFile {
+	padding: 1rem;
+	border: 1px solid var(--c-primary-800);
+	border-radius: 0.25rem 0 0 0.25rem;
+	cursor: pointer;
+}
+
+.fileName {
+	padding: 1rem;
+	border: 1px solid var(--c-primary-300);
+	color: var(--c-primary-400);
+	border-radius: 0 0.25rem 0.25rem 0;
+	flex-grow: 1;
+}
+
+.errorText {
+	color: var(--c-red);
+}
+
+.responseText {
+	color: var(--c-red);
+}

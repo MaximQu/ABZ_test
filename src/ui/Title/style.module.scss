@@ -1,0 +1,7 @@
+@use "@st/utils";
+
+.title {
+  margin-bottom: clamp(1.5rem, 0.3393rem + 4.9524vw, 3.125rem);
+	text-align: center;
+	@extend .text-h1;
+}
