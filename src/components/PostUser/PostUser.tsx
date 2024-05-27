@@ -4,7 +4,7 @@ import { queryAPI } from "@/utils/apiUtils";
 import { FC, FormEvent, useState } from "react";
 import { Form } from "..";
 import st from "./style.module.scss";
-import success from "/success.svg";
+import success from "../../assets/images/success.svg";
 
 const PostUser: FC = () => {
 	const [postUserRes, setPostUserRes] = useState<PostUserRes>();

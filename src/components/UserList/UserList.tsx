@@ -1,6 +1,6 @@
 import { User } from "@/types/getUserRes";
 import { FC, Fragment } from "react";
-import UserCard from "../UserCard/UserCard";
+import { UserCard } from "..";
 import st from "./style.module.scss";
 
 type UserListProps = {
